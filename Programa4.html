@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 4</title>
+    
+    <style>
+        body{
+            background-color: #1a1919;
+            color: #fff;
+            font-family:'Lucida Sans';
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Polígonometro</h1>
+    <script>
+        let lados = parseInt(prompt("Insira a quantidade de lados do poligono: "))
+        let medida = parseFloat(prompt("Insira a medida dos lados do poligono: "))
+        let perimetro = null
+        if(lados < 3){
+           document.write("Não é um polígono")
+        }else if(lados == 3){
+            perimetro = medida*lados
+            document.write("O valor inserido determina um triângulo com perímetro de "+perimetro+" centímetros")
+        }else if(lados == 4){
+            perimetro = medida*medida
+            document.write("O valor inserido determina um quadrado com área de "+perimetro+" centímetros")
+        }else if(lados == 5){
+            document.write("O valor inserido determina um pentágono")
+        }else{
+            document.write("Polígono não identificado")
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>
